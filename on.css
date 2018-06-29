@@ -33,6 +33,28 @@ li a.active {
 
 img {
     border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+.ad{
+    position: center;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+.tk{
+    color: blue;
+}
+.tk:hover{
+    color: red;
+}
+#tg{
+    text-align: center;
+}
+.pos{
+    position: fixed;
+    width: 100%;
 }
