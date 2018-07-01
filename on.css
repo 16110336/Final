@@ -145,3 +145,10 @@ input[type="submit"]:hover {
 .pd{
     padding: 30px;
 }
+
+
+.bulat{
+border-radius:100em;
+width:160px;
+height:160px;
+}
