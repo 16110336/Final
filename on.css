@@ -92,3 +92,16 @@ table, th, td{
     float:left;
     padding:10px;        
 }
+.gb{
+    line-height: 50px;
+    padding: 5px;
+}
+
+      #cont {display: none; }
+      .show:focus + .hide {display: inline; }
+      .show:focus + .hide + #cont {display: block;}
+
+.grs{
+    border-style: dotted;
+    border-width: 2px;
+}
