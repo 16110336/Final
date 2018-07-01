@@ -146,6 +146,7 @@ input[type="submit"]:hover {
     padding: 30px;
 }
 
+<<<<<<< HEAD
 /* dropdown */
 
 .dropbtn {
@@ -185,4 +186,11 @@ input[type="submit"]:hover {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+=======
+
+.bulat{
+border-radius:100em;
+width:160px;
+height:160px;
+>>>>>>> e1391cd7b4626618f6e81450bdf8afb30759f4c9
 }
