@@ -50,6 +50,8 @@ table{
 table, th, td{
     border: 1px solid black;
     padding: 5px;
+    background-color: rgb(128,128,128);
+    color: white;
 }
 .tk{
     color: blue;
