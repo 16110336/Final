@@ -42,8 +42,14 @@ img {
     text-align: center;
 }
 
+table{
+    border-collapse: collapse;
+    width: 100%
+}
+
 table, th, td{
     border: 1px solid black;
+    padding: 5px;
 }
 .tk{
     color: blue;
@@ -194,3 +200,4 @@ width:160px;
 height:160px;
 >>>>>>> e1391cd7b4626618f6e81450bdf8afb30759f4c9
 }
+
