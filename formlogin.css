@@ -6,7 +6,7 @@
 #login h3{
 	text-align: center;
 	padding: 25px 10px;
-	background-color: #008000;
+	background-color: #57449B;
 	color: #fff;
 	font-size: 22px;
 }
@@ -26,7 +26,7 @@ form{
 	width: 100%;
 	padding: 1.4em;
 	color: #888;
-	background-color: #DAA520;
+	background-color: #17CCC0;
 	border: none;
 	color: #eee;
 	border-bottom: 4px solid transparent;
@@ -50,7 +50,7 @@ form p{
 	margin: 10px 10px
 }
 button{
-	background-color: #3b5998;
+	background-color: #C4C1DD;
 	width: 100%
 	padding: 1.4em;
 	margin-bottom: 1em
@@ -62,4 +62,7 @@ button{
 button:hover{
 	opacity: 0.9;
 	border-color: #3b3998;
+}
+body{
+	background-image: url("gmbr/background.jpg");
 }
