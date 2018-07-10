@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nilai</title>
+	<link rel="stylesheet" type="text/css" href="nil.css">
+	<link rel="stylesheet" type="text/css" href="on.css">
+</head>
+<body>
+
+<dl>
+  <dt>
+    Nilai yang di peroleh
+  </dt>
+  <dd class="percentage percentage-60"><span class="text">MATEMATIKA: 60%</span></dd>
+  <dd class="percentage percentage-49"><span class="text">BAHASA INGGRIS: 49%</span></dd>
+  <dd class="percentage percentage-70"><span class="text">IPA: 70%</span></dd>
+  <dd class="percentage percentage-73"><span class="text">IPS: 73%</span></dd>
+  <dd class="percentage percentage-60"><span class="text">TIK: 60%</span></dd>
+  <dd class="percentage percentage-80"><span class="text">PENJAS 80%</span></dd>
+    <dd class="percentage percentage-79"><span class="text">AGAMA : 79%</span></dd>
+</dl>
+
+<h2 align="center">Statistik</h2>
+
+<div>
+	<!-- Styles -->
+<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}       
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/radar.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
+var chart = AmCharts.makeChart( "chartdiv", {
+  "type": "radar",
+  "theme": "light",
+  "dataProvider": [ {
+    "country": "agama",
+    "litres": 79
+  }, {
+    "country": "bahasa inggris",
+    "litres": 49
+  }, {
+    "country": "ipa",
+    "litres": 70
+  }, {
+    "country": "ips",
+    "litres": 73
+  }, {
+    "country": "tik",
+    "litres": 60
+  }, {
+    "country": "matematika",
+    "litres": 60
+  }, {
+    "country": "penjas",
+    "litres": 80
+  } ],
+  "valueAxes": [ {
+    "axisTitleOffset": 20,
+    "minimum": 0,
+    "axisAlpha": 0.15
+  } ],
+  "startDuration": 2,
+  "graphs": [ {
+    "balloonText": "[[value]] nilai yang di peroleh",
+    "bullet": "round",
+    "lineThickness": 2,
+    "valueField": "litres"
+  } ],
+  "categoryField": "country",
+  "export": {
+    "enabled": true
+  }
+} );
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+</div>
+
+</body>
+</html>
