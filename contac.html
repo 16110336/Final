@@ -2,10 +2,15 @@
 <html>
 <head>
 	<title>CONTAC</title>
-	<link rel="stylesheet" type="text/css" href="on.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 <body>
-
+<div>
+	<link rel="stylesheet" type="text/css" href="on.css">
 <h1 id="tg">BE SMART</h1>
 <H2 id="tg">Education For Everyone</H2>
 
@@ -30,23 +35,15 @@
 		<a href="login.html">REGISTRASI</a>
 	</li>
 </ul>
-
+</div>
 <h2 id="tg">Daftar Para Pembimbing</h2>
-<div>
-<table align="center">
-	<tr>
-		<th><img src="gmbr/ris.jpg" class="bulat"></th>
-		<th  style="width: 100%;"><p>Harist<br>
-		S1 Informatika<br>
-		08132943211<br>
-		risca.gumilang@students.amikom.ac.id<br>
-	</p>
-	</th>
-	</tr>
 
+  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">	
+
+<table align="center" id="myTable">
 	<tr>
-		<th><img src="gmbr/pf.png" height="100px"></th>
-		<th  style="width: 100%;">nama<br>
+		<th><img src="gmbr/pf.png" height="100px"><br>
+		nama<br>
 		pendidikan<br>
 		kontak<br>
 		sosmed<br>
@@ -54,8 +51,8 @@
 	</tr>
 
 	<tr>
-		<th><img src="gmbr/pf.png" height="100px"></th>
-		<th  style="width: 100%;">nama<br>
+		<th><img src="gmbr/pf.png" height="100px"><br>
+			nama<br>
 		pendidikan<br>
 		kontak<br>
 		sosmed<br>
@@ -63,8 +60,8 @@
 	</tr>
 
 	<tr>
-		<th><img src="gmbr/pf.png" height="100px"></th>
-		<th  style="width: 100%;">nama<br>
+		<th><img src="gmbr/pf.png" height="100px"><br>
+			nama<br>
 		pendidikan<br>
 		kontak<br>
 		sosmed<br>
@@ -72,15 +69,24 @@
 	</tr>
 
 	<tr>
-		<th><img src="gmbr/pf.png" height="100px"></th>
-		<th  style="width: 100%;">nama<br>
+		<th><img src="gmbr/pf.png" height="100px"><br>
+			nama<br>
+		pendidikan<br>
+		kontak<br>
+		sosmed<br>
+	</th>
+	</tr>
+
+	<tr>
+		<th><img src="gmbr/pf.png" height="100px"><br>
+			nama<br>
 		pendidikan<br>
 		kontak<br>
 		sosmed<br>
 	</th>
 	</tr>
 </table>
-</div>
+	
 
 <div class="dv">
 	<p>Be Smart for everyone</p>
@@ -88,6 +94,23 @@
 	<a href="lapor.html" id="wr">lapor admin</a>
 	<a href="Tentangkmi.html" id="wr">tentang kami</a>
 </div>
+
+<script>
+function myFunction() {
+    var input, filter, tr, th, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    tr = document.getElementById("myTable");
+    th = tr.getElementsByTagName("th");
+    for (i = 0; i < th.length; i++) {
+        if (th[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            th[i].style.display = "";
+        } else {
+            th[i].style.display = "none";
+        }
+    }
+}
+</script>
 
 </body>
 </html>
