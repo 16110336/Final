@@ -15,18 +15,24 @@ A.user
 home 		: 	1. pencarian
 				2. list/daftar
 				3.contac
+				4.home
 
 registrasi	:	1.login
 				2.password
 				3.pilihan(member/master)
 produk/materi:	1.file
-				2.audio
-				3.video
-				4.try out
+				2.video
+				3.try out
 				5.komentar
+				6.lapor admin
+				7.panduan
+				8.tentang kami
 
 B.member 	: 	1.profil
 				2.nilai
+				3.edit profil
 				
 C.master 	:	1.profil
 				2.materi
+				3.masukkan materi
+				4.soal try out
